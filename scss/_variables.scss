@@ -1,0 +1,22 @@
+// Variables
+$primary-color: #01996d;
+$text-color: #424242;
+
+// Fonts
+$lato: "Lato", sans-serif;
+$playfare: "Playfair Display", serif;
+
+// Mixins
+@mixin button {
+  font-family: $lato;
+  line-height: 20px;
+  background-color: $primary-color;
+  color: #ffffff;
+  padding: 16px 40px;
+  text-transform: capitalize;
+  border-radius: 4px;
+
+  @media screen and (max-width: 1200px) {
+    padding: 10px 35px;
+  }
+}
